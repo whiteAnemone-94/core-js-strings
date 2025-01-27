@@ -348,8 +348,9 @@ function countVowels(str) {
  */
 function isPalindrome(str) {
   let newStr = '';
+  const punctuation = '!?., ';
   for (let i = 0; i < str.length; i += 1) {
-    if (!['!', '?', ',', '.', ' '].includes(str[i])) {
+    if (!punctuation.includes(str[i])) {
       newStr += str[i].toLowerCase();
     }
   }
